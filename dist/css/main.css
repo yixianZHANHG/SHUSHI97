@@ -52,9 +52,12 @@ ion-tabs.tabs-color-active-assertive .tab-item.tab-item-active{
     width: 40%;
 }
 .contentContentDiv{
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-color: #eeeeee;
 }
 .contentContentDiva{

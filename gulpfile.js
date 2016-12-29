@@ -78,7 +78,7 @@ gulp.task('html', function() {
 //     del(['dest/assets/css', 'dest/assets/js', 'dest/assets/img'], cb)
 // });
 gulp.task('default',function () {
-    gulp.run('js','css','img','html');
+    gulp.run('lint','js','css','html');
     // 监听html文件变化
     gulp.watch('src/*.html', function(){
         gulp.run('html');
