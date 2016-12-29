@@ -17,7 +17,7 @@ angular.module("myApp.home",['ionic']).config(["$stateProvider",function ($state
         // console.log(result);
         $scope.items = result.goodsData;
         $scope.ite = result.bannerData;
-        console.log(result.bannerData)
+        // console.log(result.bannerData)
     });
     $scope.doSome =function () {
         console.log("dddddd");

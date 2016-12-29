@@ -130,36 +130,68 @@ display: inline-block;
 background:url("../images/service.png") no-repeat  center/100%;
 }
 .rongcloud-kefuChat #header{
-background: #E60012;
+background: green;
 }
 
 
-
-
-
-/*融云客服*/
-/*html,body,.scroll{*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*-webkit-user-select:auto;*/
-/*}*/
-/*div #rong-conversation{*/
-    /*left: 0;*/
-/*}*/
-/*div#rong-widget-minbtn{*/
-    /*width:6rem;*/
-    /*height:6rem;*/
-/*}*/
-/*.rongcloud-kefuBtn .rongcloud-people{*/
-    /*display: none;*/
-/*}*/
-/*#rong-widget-minbtn{*/
-    /*background:url("../images/service.png") no-repeat  center/100%;*/
-/*}*/
-/*!*.rong-widget .rongcloud-container #rong-conversation{*!*/
-    /*!*width: 100%;*!*/
-    /*!*height: 100%;*!*/
-/*!*}*!*/
-/*.rongcloud-kefuChat #header{*/
-    /*background: green;*/
-/*}*/
+/*个人中心*/
+.myContent{
+    background-color: #eeeeee;
+}
+.myDiv{
+    display: -ms-flexbox;
+    display: flex;
+    height: 10.4rem;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid silver;
+}
+.myDiv div:nth-child(1){
+    width: 29%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+}
+.myDiv div:nth-child(1) img{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+.myDiv div:nth-child(2){
+     width: 70%;
+     height: 50%;
+    margin: auto 0;
+ }
+.myDiva{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: #ffffff;
+    height: 7.7rem;
+    width: 100%;
+}
+.myDiva>div{
+    width: 50%;
+    background-color: #ffffff;
+    height: 90%;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    border-radius: 0;
+}
+.myDiva>div:nth-child(1){
+    border-right: 1px solid silver;
+}
+.myDiva>div div:nth-child(1){
+    margin: auto;
+    height: 100%;
+    margin-top: 3px;
+}
+.myDiva img{
+    width: 30%;
+    height: 60%;
+}
+.myDiva p{
+    margin-top: -30%;
+}
