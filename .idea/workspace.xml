@@ -2,78 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84dec17a-2291-4d5c-920e-8585cced1108" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/arrow-mini.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/arrow-mini2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/audioBg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/kefuicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/sms-received.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/star_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/star_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/voice.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/voice1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/images/webBg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/Recommend.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/service.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/shopIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/sidelist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/lib/fonts/ionicons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/lib/fonts/ionicons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/lib/fonts/ionicons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/Recommend.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/service.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/shopIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sidelist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/fonts/ionicons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/fonts/ionicons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/fonts/ionicons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/RongIMWidget.full.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/RongIMWidget.full.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/RongIMWidget.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/RongIMWidget.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/RongIMWidget.tidy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/RongIMWidget.tidy.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/css/RongIMWidget.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/dist2/css/RongIMWidget.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/lib/css/ionic-rating.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/lib/css/ionic.filter.bar.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/lib/css/ionic.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/lib/fonts/ionicons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/lib/js/ionic-rating.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/lib/js/ionic.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/lib/js/ionic.bundle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/lib/js/ionic.filter.bar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/controllers/homeController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/controllers/livController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/controllers/myController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/controllers/tabsController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/controllers/topicController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/services/httpFactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/services/slideBoxDirective.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/css/ionic-rating.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/css/ionic.filter.bar.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/css/ionic.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/fonts/ionicons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/js/ionic-rating.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/js/ionic.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/js/ionic.bundle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/js/ionic.filter.bar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/live.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/my.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tabs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/topic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/tabsController.js" afterPath="$PROJECT_DIR$/src/js/controllers/tabsController.js" />
     </list>
     <ignored path="SHUSHI97.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -151,8 +80,8 @@
       <file leaf-file-name="tabsController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/controllers/tabsController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
-              <caret line="3" column="126" selection-start-line="3" selection-start-column="126" selection-end-line="3" selection-end-column="126" />
+            <state relative-caret-position="280">
+              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
               <folding>
                 <element signature="e#0#50#0" expanded="false" />
               </folding>
@@ -372,12 +301,12 @@
       <option name="presentableId" value="Default" />
       <updated>1482885743329</updated>
       <workItem from="1482885745117" duration="9190000" />
-      <workItem from="1482923558628" duration="41843000" />
+      <workItem from="1482923558628" duration="41904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51033000" />
+    <option name="totallyTimeSpent" value="51094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -696,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/controllers/tabsController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="3" column="126" selection-start-line="3" selection-start-column="126" selection-end-line="3" selection-end-column="126" />
+        <state relative-caret-position="280">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
           <folding>
             <element signature="e#0#50#0" expanded="false" />
           </folding>

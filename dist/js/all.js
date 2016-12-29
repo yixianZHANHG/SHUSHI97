@@ -122,7 +122,7 @@ angular.module("myApp.tabs",["ionic"]).controller("tabsC",["$scope",'RongCustome
 
         },
         onError:function(){
-            //初始化错误
+            //初始化错误;
         }
     });
 }]);
