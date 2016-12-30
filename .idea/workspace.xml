@@ -2,39 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84dec17a-2291-4d5c-920e-8585cced1108" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/0_21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/11_21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/12_23.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/1_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/2_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/3_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/5_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/6_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/7_11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/8_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/9_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/个人中心_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/0_21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/11_21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/12_23.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/1_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/2_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/3_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/5_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/6_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/7_11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/8_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/9_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/个人中心_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/shoppingCar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/shoppingCar.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/main.css" afterPath="$PROJECT_DIR$/dist/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/main.min.css" afterPath="$PROJECT_DIR$/dist/css/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/all.js" afterPath="$PROJECT_DIR$/dist/js/all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/all.min.js" afterPath="$PROJECT_DIR$/dist/js/all.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/my.html" afterPath="$PROJECT_DIR$/dist/my.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/css.css" afterPath="$PROJECT_DIR$/src/css/css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/homeController.js" afterPath="$PROJECT_DIR$/src/js/controllers/homeController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/tabsController.js" afterPath="$PROJECT_DIR$/src/js/controllers/tabsController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my.html" afterPath="$PROJECT_DIR$/src/my.html" />
     </list>
     <ignored path="SHUSHI97.iws" />
@@ -61,9 +35,12 @@
       <file leaf-file-name="my.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="271">
+              <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+              <folding>
+                <element signature="n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,8 +48,8 @@
       <file leaf-file-name="css.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/css.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="179" column="17" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
+            <state relative-caret-position="307">
+              <caret line="209" column="12" selection-start-line="209" selection-start-column="12" selection-end-line="209" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -233,20 +210,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SHUSHI97" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SHUSHI97" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -262,8 +225,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Documents\SHUSHI97\dist\images" />
       <recent name="C:\Users\Administrator\Documents\SHUSHI97\src\images" />
+      <recent name="C:\Users\Administrator\Documents\SHUSHI97\dist\images" />
       <recent name="C:\Users\Administrator\Documents\SHUSHI97\src" />
       <recent name="C:\Users\Administrator\Documents\SHUSHI97\dist" />
       <recent name="C:\Users\Administrator\Documents\SHUSHI97\src\css" />
@@ -344,20 +307,20 @@
       <option name="presentableId" value="Default" />
       <updated>1482885743329</updated>
       <workItem from="1482885745117" duration="9190000" />
-      <workItem from="1482923558628" duration="52262000" />
+      <workItem from="1482923558628" duration="69811000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61452000" />
+    <option name="totallyTimeSpent" value="79001000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27008456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24126269" sideWeight="0.5021142" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24126269" sideWeight="0.5021142" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -663,16 +626,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/my.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="271">
+          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+          <folding>
+            <element signature="n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="179" column="17" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
+        <state relative-caret-position="307">
+          <caret line="209" column="12" selection-start-line="209" selection-start-column="12" selection-end-line="209" selection-end-column="12" />
           <folding />
         </state>
       </provider>

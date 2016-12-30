@@ -137,7 +137,7 @@ background: green;
 }
 .myDiv{
     display: flex;
-    height: 10.4rem;
+    height: 8.4rem;
     width: 100%;
     background-color: #ffffff;
     border-bottom: 1px solid silver;
@@ -155,8 +155,12 @@ background: green;
 .myDiv div:nth-child(2){
      width: 70%;
      height: 50%;
+    padding: 0;
     margin: auto 0;
  }
+.myDiv div:nth-child(2) h5{
+    margin: 0;
+}
 .myDiva{
     display: flex;
     justify-content: space-around;
@@ -181,9 +185,42 @@ background: green;
     margin-top: 3px;
 }
 .myDiva img{
-    width: 30%;
-    height: 60%;
+    width: 25%;
+    height: 35%;
 }
 .myDiva p{
     margin-top: -30%;
 }
+
+.myContent a{
+    display: flex;
+}
+.myContent a>.icon {
+    color: #c6c6c6;
+    font-size: 2rem;
+}
+.myContent a img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 4%;
+}
+.myContent a span{
+    position: absolute;
+    /*margin-left:55%;*/
+    right: 10%;
+
+}
+.myDivBt>div:nth-child(1),.myDivBt>div:nth-child(2),.myDivBt>div:nth-child(3),.myDivBt>div:nth-child(4){
+margin-top: 1rem;
+
+}
+.item-note {
+    color: #aaa;
+}
+/*.listS a{*/
+    /*padding-left:20px;*/
+/*}*/
+/*.listS a>img{*/
+   /*width: 2rem;*/
+    /*height: 2rem;*/
+/*}*/
