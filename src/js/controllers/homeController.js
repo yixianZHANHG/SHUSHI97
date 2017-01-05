@@ -19,11 +19,15 @@ angular.module("myApp.home",['ionic']).config(["$stateProvider",function ($state
         $scope.ite = result.bannerData;
         // console.log(result.bannerData)
     });
+
+
     $scope.doSome =function(index){
        //$state.go("homeCon");
         $location.path("tabs/homeCon");
         console.log(index);
     };
+
+
 
     $ionicModal.fromTemplateUrl('dd', {
         scope: $scope

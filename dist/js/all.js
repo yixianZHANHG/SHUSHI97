@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2016/12/28.
  */
-angular.module("myApp",["ionic",'RongWebIMWidget',"myApp.tabs",'myApp.httpFactory',"myApp.home","myApp.live","myApp.topic","myApp.my","myApp.httpFactory","myApp.homeCon"]).config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlRouterProvider) {
+angular.module("myApp",["ionic",'RongWebIMWidget',"myApp.tabs",'myApp.httpFactory',"myApp.home","myApp.live","myApp.topic","myApp.my","myApp.httpFactory","myApp.homeCon","myApp.sHop"]).config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlRouterProvider) {
     $stateProvider.state("tabs",{
         url:"/tabs",
         abstract:true,
@@ -49,11 +49,15 @@ angular.module("myApp.home",['ionic']).config(["$stateProvider",function ($state
         $scope.ite = result.bannerData;
         // console.log(result.bannerData)
     });
+
+
     $scope.doSome =function(index){
        //$state.go("homeCon");
         $location.path("tabs/homeCon");
         console.log(index);
     };
+
+
 
     $ionicModal.fromTemplateUrl('dd', {
         scope: $scope
@@ -78,7 +82,32 @@ angular.module("myApp.live",[]).config(["$stateProvider",function ($stateProvide
             }
         }
     })
-}]).controller("liveC",["$scope",function ($scope) {
+}]).controller("liveC",["$scope","$state","$location","$ionicModal","$ionicActionSheet","HttpFactory",function ($scope,$state,$location,$ionicModal,$ionicActionSheet,HttpFactory) {
+    var url = "http://114.112.94.166/sunny/wap/api/getGoods";
+    HttpFactory.getData(url).then(function (result) {
+        // console.log(result);
+        $scope.items = result.goodsData;
+        $scope.ite = result.bannerData;
+        // console.log(result.bannerData)
+    });
+
+
+    $scope.doSome =function(index){
+        //$state.go("homeCon");
+        $location.path("tabs/homeCon");
+        console.log(index);
+    };
+
+
+
+    $ionicModal.fromTemplateUrl('dd', {
+        scope: $scope
+    }).then(function(modal) {
+        $scope.modal = modal;
+    });
+    $scope.createContact = function() {
+        $scope.modal.hide();
+    };
 
 }]);
 /**
@@ -95,6 +124,19 @@ angular.module("myApp.my",[]).config(["$stateProvider",function ($stateProvider)
         }
     })
 }]).controller("myC",["$scope",function ($scope) {
+
+}]);
+/**
+ * Created by Administrator on 2017/1/5 0005.
+ */
+angular.module("myApp.sHop",['ionic']).config(["$stateProvider",function ($stateProvider) {
+    $stateProvider.state("sHop",{
+                url:"/sHop",
+                templateUrl:"sHop.html",
+                controller:"sHopController"
+
+    })
+}]).controller("sHopController",["$scope","HttpFactory",function ($scope,HttpFactory) {
 
 }]);
 /**
@@ -174,18 +216,6 @@ angular.module("myApp.topic",[]).config(["$stateProvider",function ($stateProvid
     })
 }]).controller("topicC",["$scope","$ionicModal","$ionicActionSheet",function ($scope,$ionicModal,$ionicActionSheet) {
 
-    //$scope.duSome =function(){
-
-        $ionicModal.fromTemplateUrl('dd', {
-            scope: $scope
-        }).then(function(modal) {
-            $scope.modal = modal;
-        });
-        $scope.createContact = function(u) {
-            $scope.modal.hide();
-        };
-
-    //}
 
 }]);
 /**

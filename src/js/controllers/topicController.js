@@ -13,17 +13,5 @@ angular.module("myApp.topic",[]).config(["$stateProvider",function ($stateProvid
     })
 }]).controller("topicC",["$scope","$ionicModal","$ionicActionSheet",function ($scope,$ionicModal,$ionicActionSheet) {
 
-    //$scope.duSome =function(){
-
-        $ionicModal.fromTemplateUrl('dd', {
-            scope: $scope
-        }).then(function(modal) {
-            $scope.modal = modal;
-        });
-        $scope.createContact = function(u) {
-            $scope.modal.hide();
-        };
-
-    //}
 
 }]);
