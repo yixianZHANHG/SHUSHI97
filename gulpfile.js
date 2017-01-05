@@ -4,7 +4,7 @@
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin'), //html压缩
     imagemin = require('gulp-imagemin'),//图片压缩
-    pngcrush = require('imagemin-pngcrush'),
+    //pngcrush = require('imagemin-pngcrush'),
     // sass = require('gulp-ruby-sass'),//scss编译
     // sass = require('gulp-sass'),//scss编译
     autoprefixer = require('gulp-autoprefixer'),//css3代码自动补全插件
@@ -20,7 +20,7 @@ gulp.task('lint', function() {
     return gulp.src(['src/js/*.js','src/js/controllers/*.js','src/js/services/*.js'])
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
-        .pipe(notify({ message: 'lint task ok' }));
+        //.pipe(notify({ message: 'lint task ok' }));
 });
 // 压缩js
 gulp.task('js', function() {
@@ -30,7 +30,7 @@ gulp.task('js', function() {
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
-        .pipe(notify({ message: 'js 压缩完成!' }));
+        //.pipe(notify({ message: 'js 压缩完成!' }));
 });
 //编译并压缩scss
 // gulp.task('scss', function() {
@@ -52,7 +52,7 @@ gulp.task('css', function() {
         .pipe(rename({ suffix: '.min' }))
         .pipe(minifycss())
         .pipe(gulp.dest('dist/css'))
-        .pipe(notify({ message: 'css task ok' }));
+        //.pipe(notify({ message: 'css task ok' }));
 });
 // 压缩图片
 gulp.task('img', function() {
@@ -63,14 +63,14 @@ gulp.task('img', function() {
             use: [pngcrush()]
         }))
         .pipe(gulp.dest('./dist/images/'))
-        .pipe(notify({ message: 'img task ok' }));
+        //.pipe(notify({ message: 'img task ok' }));
 });
 // 压缩html
 gulp.task('html', function() {
     return gulp.src('src/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist'))
-        .pipe(notify({ message: 'html task ok' }));
+        //.pipe(notify({ message: 'html task ok' }));
 
 });
 //清除文件

@@ -10,7 +10,6 @@
 
 <ion-view>
         <ion-content class="homeContent">
-
            <div class="homeContentDivLb">
                <ion-slide-box>
                    <ion-slide>
@@ -23,22 +22,30 @@
                 <img src="images/Recommend.png">
             </div>
             <div class="contentContentDiv" >
-                    <div class="contentContentDiva" ng-repeat="it in items" >
+                    <div class="contentContentDiva" ng-repeat="it in items"  >
                         <div class="contentContentDivA">
-                            <img ng-src="{{'http://114.112.94.166/'+it.goods_introduction}}" >
+                            <img ng-src="{{'http://114.112.94.166/'+it.goods_introduction}}" ng-click="doSome($index)" >
                         </div>
                         <div>
                             <div class="contentContentDivD">{{it.goods_name}}</div>
                             <div class="contentContentDivDiv">￥<span>{{it.sort_order}}/瓶</span>
                                 <s>￥{{it.shop_price}}/瓶</s>
-                                <button class="button button-clear contentContentDivimgT">
+                                <button class="button button-clear contentContentDivimgT" ng-click="modal.show($index)">
                                     <img src="images/shopIcon.png" >
                                 </button>
                             </div>
                         </div>
                     </div>
+
             </div>
 
+            <script id="dd" type="text/ng-template">
+                <ion-modal-view style="background-color: #4d4d4d">
+                    <div class="button button-primary" ng-click="modal.hide()">Cancel</div>
+                </ion-modal-view>
+            </script>
+
+
         </ion-content>
-        <!--<img src="images/service.png" class="topicButton" ng-click="doSome()">-->
+
 </ion-view>
