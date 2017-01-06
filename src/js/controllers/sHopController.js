@@ -8,14 +8,41 @@ angular.module("myApp.sHop",['ionic']).config(["$stateProvider",function ($state
                 controller:"sHopController"
 
     })
-}]).controller("sHopController",["$scope","HttpFactory",function ($scope,HttpFactory) {
-    var url = "http://114.112.94.166/sunny/wap/api/getGoods";
+}]).controller("sHopController",["$scope","HttpFactory","$ionicPopup",function ($scope,HttpFactory,$ionicPopup) {
+    var url = "http://114.112.94.166/sunny/wap/api/ushoppingCart"
+    ;
     HttpFactory.getData(url).then(function (result) {
-        // console.log(result);
-        $scope.items = result.goodsData;
-        $scope.ite = result.bannerData;
+         //console.log(result);
+        $scope.items = result.shoppingCart;
+        //console.log(result.shoppingCart);
+        //$scope.ite = result.bannerData;
         // console.log(result.bannerData)
     });
+    $scope.showConfirm = function(index) {
+        var myPopup = $ionicPopup.show({
+            template: '<p>确定要删除吗？</p>',
+            scope: $scope,
+            buttons: [
+                { text: '取消',
+                    type:''
+                },
+                {
+                    text: '确定',
+                    type: 'button-positive',
+                    onTap: function(e) {
+                        $scope.items.splice(index,1);
+                        HttpFactory.getData(url,{params:$scope.items},'DELETE').then(function (result) {
+                            //console.log(result);
+                            //console.log($scope.items);
 
+                        },function(err){
+                            //console.log(err);
+                        });
+
+                    }
+                },
+            ]
+        });
+    };
 
 }]);

@@ -2,18 +2,18 @@
 
    <ion-header-bar></ion-header-bar>
     <ion-content>
-        <div class="list sHopDiv">
+        <div class="list sHopDiv" ng-repeat="it in items">
             <div style="margin: auto">sssss</div>
             <div class="item item-thumbnail-left">
-                <img src="images/1.png" ng-click="">
+                <img ng-src="{{'http://114.112.94.166/'+it.litpic}}" ng-click="doSome($index)" >
                 <div class="sHopss">
-                    <h2>阳澄湖大闸蟹</h2>
+                    <h2>{{it.title}}</h2>
                     <p>Nine Inch Nailssssssssssss</p>
                     <div>
-                        <span>￥<span></span>258.00</span>
-                        <span>x1</span>
-                        <span class="button button-clear">
-                            <img src="images/wastebin.png">
+                        <span>￥<span></span>{{it.price}}</span>
+                        <span>x{{it.num}}</span>
+                        <span class="button button-clear" ng-click="showConfirm($index)">
+                            <img src="images/wastebin.png" >
                         </span>
                     </div>
                 </div>

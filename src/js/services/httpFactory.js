@@ -3,20 +3,20 @@
  */
 angular.module('myApp.httpFactory',['ionic']).factory('HttpFactory',['$http','$q',function ($http,$q) {
     return {
-        getData:function (url,type) {
+        getData:function (url,params,type) {
             if (url){
                 var promise = $q.defer();
-                // url = "http://192.168.0.100:3000/?myUrl=" + encodeURIComponent(url);
-                // url = "http://localhost:3000/?myUrl=" + encodeURIComponent(url);
                 url = url;
                 type = type ? type:"GET";
+                params = params ? params:{};
                 $http({
                     url:url,
+                    params:params,
                     method:type,
                     timeout:20000
                 }).then(function (reslut) {
+                    //console.log(reslut.data);
                     reslut =reslut.data;
-                    // reslut = reslut[Object.keys(reslut)[0]];
                     promise.resolve(reslut);
                 },function (err) {
                     promise.reject(err);

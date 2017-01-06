@@ -232,6 +232,7 @@ margin-top: 1rem;
 .modal{
     /*top: 0;*/
     min-height: 30%;
+    background-color: #0c60ee;
     top: auto;
     bottom: 0;
 }
@@ -268,7 +269,7 @@ margin-top: 1rem;
     width: 100%;
     border: 0;
 }
-.sHop .sHopDiv.item-thumbnail-left .item-content .item-image, .item-thumbnail-left .item-content>img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left>img:first-child {
+.sHop .sHopDiv .item-thumbnail-left>img:first-child {
     background-color: #0c60ee;
     max-width: 13.3rem;
     max-height: 10.7rem;
@@ -294,4 +295,7 @@ width: 60%;
 .sHop .sHopDiv .sHopss>div span:nth-child(1) span:nth-child(1){
     font-size: 2rem;
 
+}
+.ddd .radio input:after{
+    background-color: red;
 }
