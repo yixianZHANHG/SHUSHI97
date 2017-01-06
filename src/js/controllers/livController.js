@@ -27,15 +27,4 @@ angular.module("myApp.live",[]).config(["$stateProvider",function ($stateProvide
         console.log(index);
     };
 
-
-
-    $ionicModal.fromTemplateUrl('dd', {
-        scope: $scope
-    }).then(function(modal) {
-        $scope.modal = modal;
-    });
-    $scope.createContact = function() {
-        $scope.modal.hide();
-    };
-
 }]);

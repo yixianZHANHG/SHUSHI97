@@ -222,11 +222,26 @@ margin-top: 1rem;
 
 /*模态窗口*/
 
-.ionicA .scroll-content{
-    top:auto;
+/*.ionicA .scroll-content{*/
+    /*top:auto;*/
+/*}*/
+
+.modal-backdrop{
+   background-color: rgba(0, 0, 0, 0.37);
 }
-
-
+.modal{
+    /*top: 0;*/
+    min-height: 30%;
+    top: auto;
+    bottom: 0;
+}
+.modal .modalContent{
+    top: auto;
+    bottom: 0;
+}
+.modal .modalContent .modalRow button{
+    background-color: #00a0ff;
+}
 
 /*live页面的*/
 
@@ -235,4 +250,48 @@ margin-top: 1rem;
 }
 .livContent .contentContentDiv{
     margin-top: 25px;
+}
+
+
+/*sHop页面*/
+.sHop{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.sHopDiv{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding:3px;
+    display: flex;
+}
+.sHop .sHopDiv .item{
+    width: 100%;
+    border: 0;
+}
+.sHop .sHopDiv.item-thumbnail-left .item-content .item-image, .item-thumbnail-left .item-content>img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left>img:first-child {
+    background-color: #0c60ee;
+    max-width: 13.3rem;
+    max-height: 10.7rem;
+}
+.sHop .sHopDiv .sHopss{
+    margin: 0 23%;
+}
+.sHop .sHopDiv .sHopss>div{
+    margin-top: 15%;
+}
+.sHop .sHopDiv .sHopss>div .button img{
+width: 60%;
+    height: 80%;
+}
+.sHop .sHopDiv .sHopss>div span{
+    margin-right: 10%;
+    background-color: white;
+}
+.sHop .sHopDiv .sHopss>div span:nth-child(1){
+    color: red;
+    font-size: 1.3rem;
+}
+.sHop .sHopDiv .sHopss>div span:nth-child(1) span:nth-child(1){
+    font-size: 2rem;
+
 }

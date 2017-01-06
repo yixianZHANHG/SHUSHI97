@@ -28,14 +28,16 @@ angular.module("myApp.home",['ionic']).config(["$stateProvider",function ($state
     };
 
 
-
-    $ionicModal.fromTemplateUrl('dd', {
-        scope: $scope
+    $ionicModal.fromTemplateUrl('modal.html',{
+        scope:$scope,
+        animation: 'slide-in-up'
     }).then(function(modal) {
         $scope.modal = modal;
     });
-    $scope.createContact = function() {
+    $scope.openModal = function() {
+        $scope.modal.show();
+    };
+    $scope.closeModal = function() {
         $scope.modal.hide();
     };
-
 }]);

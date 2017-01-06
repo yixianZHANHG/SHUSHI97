@@ -58,16 +58,18 @@ angular.module("myApp.home",['ionic']).config(["$stateProvider",function ($state
     };
 
 
-
-    $ionicModal.fromTemplateUrl('dd', {
-        scope: $scope
+    $ionicModal.fromTemplateUrl('modal.html',{
+        scope:$scope,
+        animation: 'slide-in-up'
     }).then(function(modal) {
         $scope.modal = modal;
     });
-    $scope.createContact = function() {
+    $scope.openModal = function() {
+        $scope.modal.show();
+    };
+    $scope.closeModal = function() {
         $scope.modal.hide();
     };
-
 }]);
 /**
  * Created by Administrator on 2016/12/28.
@@ -98,17 +100,6 @@ angular.module("myApp.live",[]).config(["$stateProvider",function ($stateProvide
         console.log(index);
     };
 
-
-
-    $ionicModal.fromTemplateUrl('dd', {
-        scope: $scope
-    }).then(function(modal) {
-        $scope.modal = modal;
-    });
-    $scope.createContact = function() {
-        $scope.modal.hide();
-    };
-
 }]);
 /**
  * Created by Administrator on 2016/12/28.
@@ -137,6 +128,14 @@ angular.module("myApp.sHop",['ionic']).config(["$stateProvider",function ($state
 
     })
 }]).controller("sHopController",["$scope","HttpFactory",function ($scope,HttpFactory) {
+    var url = "http://114.112.94.166/sunny/wap/api/getGoods";
+    HttpFactory.getData(url).then(function (result) {
+        // console.log(result);
+        $scope.items = result.goodsData;
+        $scope.ite = result.bannerData;
+        // console.log(result.bannerData)
+    });
+
 
 }]);
 /**
@@ -164,6 +163,7 @@ angular.module("myApp.tabs",["ionic"]).controller("tabsC",["$scope",'RongCustome
             var kf = angular.element(document.getElementById('rong-widget-minbtn'));
             kf.css('bottom','80px');
             kf.css('right','20px');
+            kf.css('z-index','9');
             var ks = angular.element(document.getElementById('rong-conversation'));
             ks.css('height','100%')
             ks.css('width','100%')

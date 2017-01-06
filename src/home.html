@@ -30,7 +30,7 @@
                             <div class="contentContentDivD">{{it.goods_name}}</div>
                             <div class="contentContentDivDiv">￥<span>{{it.sort_order}}/瓶</span>
                                 <s>￥{{it.shop_price}}/瓶</s>
-                                <button class="button button-clear contentContentDivimgT" ng-click="modal.show($index)">
+                                <button class="button button-clear contentContentDivimgT" ng-click="openModal()">
                                     <img src="images/shopIcon.png" >
                                 </button>
                             </div>
@@ -38,22 +38,6 @@
                     </div>
 
             </div>
-
-            <script id="dd" type="text/ng-template">
-                <ion-modal-view style="background-color:rgba(225,225,67,.3)" ng-click="modal.hide()" class="ionicA">
-                    <ion-content style="background-color: #00a0ff">
-
-                        <div style="background-color: white;height: 150px;width: 100%"></div>
-                            <div class="button-bar">
-                                <a class="button button-assertive">加入购物车</a>
-                                <a class="button button-balanced">立即购买</a>
-                            </div>
-
-                    </ion-content>
-                </ion-modal-view>
-            </script>
-
-
         </ion-content>
 
 </ion-view>

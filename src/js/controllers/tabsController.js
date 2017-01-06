@@ -23,6 +23,7 @@ angular.module("myApp.tabs",["ionic"]).controller("tabsC",["$scope",'RongCustome
             var kf = angular.element(document.getElementById('rong-widget-minbtn'));
             kf.css('bottom','80px');
             kf.css('right','20px');
+            kf.css('z-index','9');
             var ks = angular.element(document.getElementById('rong-conversation'));
             ks.css('height','100%')
             ks.css('width','100%')
