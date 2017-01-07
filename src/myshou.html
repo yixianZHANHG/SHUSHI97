@@ -9,19 +9,22 @@
                  <ion-checkbox><span>默认地址</span></ion-checkbox>
                 <div class="myshouba">
                     <span>
-                         <div class="button button-clear button-dark" ng-click="show()">
+                         <div class="button button-clear button-dark" ng-click="openModal($index,$event)">
                              <img src="images/addressEdit.png">
                              <span>编辑</span>
                          </div>
                     </span>
                     <span>
-                         <div class="button button-clear button-dark">
-                             <img src="images/addressDelete.png">
-                             <span>删除</span>
-                         </div>
-                    </span>
-                </div>
-            </div>
+                         <div class="button button-clear button-dark" ng-click="dd($index)">
+        <img src="images/addressDelete.png">
+        <span>删除</span>
         </div>
-    </ion-content>
+        </span>
+        </div>
+        </div>
+        </div>
+        </ion-content>
+        <ion-footer-bar align-title="center" class="bar-assertive">
+            <h1 class="title button button-clear" ng-click="openModal($index,$event)">新增地址</h1>
+    </ion-footer-bar>
 </ion-view>

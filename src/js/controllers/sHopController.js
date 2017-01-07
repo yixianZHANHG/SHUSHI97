@@ -14,7 +14,7 @@ angular.module("myApp.sHop",['ionic']).config(["$stateProvider",function ($state
     HttpFactory.getData(url).then(function (result) {
          //console.log(result);
         $scope.items = result.shoppingCart;
-        
+
     });
     $scope.showConfirm = function(index) {
         var myPopup = $ionicPopup.show({
