@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2016/12/28.
  */
-angular.module("myApp",["ionic",'RongWebIMWidget',"myApp.tabs",'myApp.httpFactory',"myApp.home","myApp.live","myApp.topic","myApp.my","myApp.httpFactory","myApp.homeCon","myApp.sHop"]).config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlRouterProvider) {
+angular.module("myApp",["ionic",'RongWebIMWidget',"myApp.tabs",'myApp.httpFactory',"myApp.home","myApp.live","myApp.topic","myApp.my","myApp.httpFactory","myApp.homeCon","myApp.sHop","myApp.myshou"]).config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlRouterProvider) {
     $stateProvider.state("tabs",{
         url:"/tabs",
         abstract:true,
@@ -118,6 +118,45 @@ angular.module("myApp.my",[]).config(["$stateProvider",function ($stateProvider)
 
 }]);
 /**
+ * Created by Administrator on 2017/1/7 0007.
+ */
+angular.module("myApp.myshou",['ionic']).config(["$stateProvider",function ($stateProvider) {
+    $stateProvider.state("myshou",{
+        url:"/myshou",
+        templateUrl:"myshou.html",
+        controller:"myshouController"
+
+    })
+}]).controller("myshouController",["$scope","HttpFactory","$ionicPopup","$ionicActionSheet",function ($scope,HttpFactory,$ionicPopup,$ionicActionSheet) {
+    //var url = "http://114.112.94.166/sunny/wap/api/ushoppingCart"
+    //    ;
+    //HttpFactory.getData(url).then(function (result) {
+        //console.log(result);
+        //$scope.items = result.shoppingCart;
+        //console.log(result.shoppingCart);
+        //$scope.ite = result.bannerData;
+        // console.log(result.bannerData)
+    //});
+
+    $scope.show = function() {
+console.log("sssssss");
+        // 显示操作表
+        //$ionicActionSheet.show({
+        //    buttons: [
+        //        { text: '<b>Share</b> This' },
+        //        { text: 'Move' },
+        //    ],
+        //    destructiveText: 'Delete',
+        //    titleText: 'Modify your album',
+        //    cancelText: 'Cancel',
+        //    buttonClicked: function(index) {
+        //        return true;
+        //    }
+        //});
+
+    };
+}]);
+/**
  * Created by Administrator on 2017/1/5 0005.
  */
 angular.module("myApp.sHop",['ionic']).config(["$stateProvider",function ($stateProvider) {
@@ -133,9 +172,7 @@ angular.module("myApp.sHop",['ionic']).config(["$stateProvider",function ($state
     HttpFactory.getData(url).then(function (result) {
          //console.log(result);
         $scope.items = result.shoppingCart;
-        //console.log(result.shoppingCart);
-        //$scope.ite = result.bannerData;
-        // console.log(result.bannerData)
+        
     });
     $scope.showConfirm = function(index) {
         var myPopup = $ionicPopup.show({
